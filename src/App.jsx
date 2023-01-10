@@ -1,13 +1,16 @@
+import { Link } from "react-router-dom";
 import "./App.css";
 import AlertButton from "./components/AlertButton";
+import Head from "./components/Head";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <a href="/app">App</a>
-        <a href="/app">App</a>
+        <Link to="/">App</Link>
+        <a href="/">App</a>
       </header>
+      <Head />
       <AlertButton />
     </div>
   );
