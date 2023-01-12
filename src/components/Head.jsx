@@ -1,4 +1,4 @@
-import { Link, NavLink, useMatch } from "react-router-dom";
+/*import { Link, NavLink, useMatch } from "react-router-dom";
 import "./Head.css";
 import logo from "../assets/tete.svg";
 
@@ -45,4 +45,4 @@ function Head() {
     </>
   );
 }
-export default Head;
+export default Head;*/

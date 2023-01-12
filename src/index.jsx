@@ -3,22 +3,30 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, Link, RouterProvider } from "react-router-dom";
-import App from "./App";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import A from "./pages/a/A";
+import B from "./pages/b/B";
+import Home from "./pages/home/Home";
+import AppLayout from "./layout/app/AppLayout";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/a",
-    element: <App />,
-  },
-  {
-    path: "/b",
-    element: <App />,
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/a",
+        element: <A />,
+      },
+      {
+        path: "/b",
+        element: <B />,
+      },
+    ],
   },
 ]);
 root.render(
