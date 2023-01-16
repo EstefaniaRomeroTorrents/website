@@ -1,6 +1,6 @@
 import "./Home.css";
 import AlertButton from "../../components/AlertButton";
-import Box from "../../components/Box";
+/*import Box from "../../components/Box";*/
 
 function Home() {
   return (

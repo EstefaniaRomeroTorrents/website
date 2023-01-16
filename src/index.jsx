@@ -8,9 +8,25 @@ import A from "./pages/a/A";
 import B from "./pages/b/B";
 import Home from "./pages/home/Home";
 import AppLayout from "./layout/app/AppLayout";
+import NotFound from "./pages/404/NotFound";
+
+/* Tres maneres diferents de declarar les rutes */
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const router = createBrowserRouter([
+  /* {
+    element: <AppLayout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/a",
+        element: <A />,
+      },
+    ],
+  },*/
   {
     element: <AppLayout />,
     children: [
@@ -28,6 +44,30 @@ const router = createBrowserRouter([
       },
     ],
   },
+  {
+    path: "*",
+    element: <NotFound />,
+  },
+  /* {
+    path: "/",
+    element: <AppLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />,
+      },
+      {
+        path: "a",
+        element: <A />,
+      },
+      {
+        path: "b",
+        element: <B />,
+      },
+    ],
+    path: "b",
+        element: <B />,
+  },*/
 ]);
 root.render(
   <React.StrictMode>

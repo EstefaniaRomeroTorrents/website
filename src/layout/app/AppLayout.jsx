@@ -26,6 +26,14 @@ function AppLayout() {
           >
             B
           </NavLink>
+          <NavLink
+            to="/c"
+            className={({ isActive }) => {
+              return isActive ? "activeNav" : undefined;
+            }}
+          >
+            C
+          </NavLink>
         </header>
         <Outlet></Outlet>
       </div>
