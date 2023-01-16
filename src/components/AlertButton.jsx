@@ -1,10 +1,18 @@
+import { Info } from "@mui/icons-material";
+import { Button } from "@mui/material";
+
 // AlertButton.js
 function AlertButton() {
   return (
     <div>
-      <button onClick={() => alert("Alert Button Clicked!")}>
+      <Button
+        variant="contained"
+        onClick={() => alert("Alert Button Clicked!")}
+        color="info"
+        startIcon={<Info />}
+      >
         Alert Button
-      </button>
+      </Button>
     </div>
   );
 }

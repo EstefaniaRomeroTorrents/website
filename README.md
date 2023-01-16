@@ -6,6 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - [React router](https://reactrouter.com/en/main)
 
+## Material UI
+
+- [Material UI](https://mui.com/material-ui/getting-started/installation/)
+
+## Material Icons
+
+- [Material Icons](https://mui.com/material-ui/material-icons/)
+
 ## Available Scripts
 
 In the project directory, you can run:
